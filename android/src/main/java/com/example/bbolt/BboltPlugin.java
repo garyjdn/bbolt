@@ -21,17 +21,17 @@ public class BboltPlugin implements FlutterPlugin, MethodCallHandler {
   private MethodChannel channel;
 
   /// Either registerWith or onAttachedToEngine will be called
-  @SuppressWarnings("deprecation")
-  public static void registerWith(Registrar registrar) {
-    channel = new MethodChannel(registrar.messenger(), "bbolt");
-    channel.setMethodCallHandler(new BboltPlugin());
+  //@SuppressWarnings("deprecation")
+  //public static void registerWith(Registrar registrar) {
+  //  channel = new MethodChannel(registrar.messenger(), "bbolt");
+  //  channel.setMethodCallHandler(new BboltPlugin());
 
-    File appFiles = registrar.activeContext().getFilesDir();
-    if(!created){
-      db = new BoltDB(appFiles.getAbsolutePath());
-      created = true;
-    }
-  }
+  //  File appFiles = registrar.activeContext().getFilesDir();
+  //  if(!created){
+  //    db = new BoltDB(appFiles.getAbsolutePath());
+  //    created = true;
+  //  }
+  //}
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
