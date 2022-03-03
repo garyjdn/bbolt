@@ -1,4 +1,4 @@
-package io.flutter.plugins.firebasecoreexample;
+package com.example.bbolt;
 
 import io.flutter.embedding.android.FlutterActivity;
 import io.flutter.embedding.engine.FlutterEngine;
