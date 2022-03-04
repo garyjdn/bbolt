@@ -14,8 +14,8 @@ class Bbolt {
     return version;
   }
 
-  static Future<Uint8List?> getKey(String bucket, String key) async {
-    final Uint8List? value =
+  static Future<Uint8List> getKey(String bucket, String key) async {
+    final Uint8List value =
         await _channel.invokeMethod('get', {"bucket": bucket, "key": key});
     log("received value for key $key");
     return value;
