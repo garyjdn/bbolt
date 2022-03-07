@@ -35,6 +35,5 @@ android {
 }
 
 dependencies {
-    implementation files('Mobile.aar')
-    implementation files('Mobile-sources.jar')
+    api project(':bbolt')
 }
